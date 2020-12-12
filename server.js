@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 '/api/auth/signin'
 */
 app.get('/api/users', (req, res) =>{
-    //db​.​user​.findAll().then(users=>res.json(users))
+    db​.​user​.findAll().then(users=>res.json(users))
     console.log("Estructura base del proyecto backend");
     res.send("Estructura base del proyecto backend");
 });
